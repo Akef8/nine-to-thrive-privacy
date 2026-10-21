@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Android app. Everything stays on your phone.">
+<!--
+  TO RENAME THE APP: change APP_NAME below (one place). It fills every
+  <span class="app-name"> on the page. The text inside each span is only a
+  fallback for browsers with JavaScript off - search and replace it too.
+  TO CHANGE THE EMAIL: change CONTACT_EMAIL below.
+  No fonts, scripts or images are loaded from other sites, so visitors are not tracked.
+-->
+<script>
+  const APP_NAME = "Nine to Thrive";
+  const CONTACT_EMAIL = "oldersaltedfish@gmail.com";
+  document.addEventListener("DOMContentLoaded", () => {
+    document.title = APP_NAME + " - Privacy Policy";
+    document.querySelectorAll(".app-name").forEach(e => e.textContent = APP_NAME);
+    document.querySelectorAll(".contact").forEach(e => {
+      e.textContent = CONTACT_EMAIL;
+      e.href = "mailto:" + CONTACT_EMAIL;
+    });
+  });
+</script>
+<style>
+  :root {
+    --bg: #F4EFE6; --card: #FBF8F2; --ink: #2F3A31; --soft: #56645A;
+    --accent: #3F6B4E; --line: #E2DACB;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141A17; --card: #1E2621; --ink: #E8EDE7; --soft: #B5C2B8;
+            --accent: #9EC2A1; --line: #2E3832; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  .date { color: var(--soft); margin: 0 0 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 20px 22px; margin: 0 0 16px;
+  }
+  .short { border-color: var(--accent); }
+  h2 { font-size: 20px; margin: 0 0 8px; }
+  p, ul { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  li { margin: 0 0 6px; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); }
+  .soft { color: var(--soft); }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="app-name">Nine to Thrive</span> Privacy Policy</h1>
+  <p class="date">Last updated: 21 October 2026</p>
+
+  <section class="card short">
+    <h2>The short version</h2>
+    <p><strong>Everything stays on your phone.</strong> There is no account, no ads,
+    no analytics and no tracking. The app has no internet permission, so it cannot
+    send your data anywhere. We (the makers) never see your data.</p>
+  </section>
+
+  <section class="card">
+    <h2>What the app keeps on your phone</h2>
+    <p>The app saves these things in its own private storage on your phone only:</p>
+    <ul>
+      <li>Your nickname and, if you enter it, your weight (used only to suggest a water goal).</li>
+      <li>The places you set: your office, an optional home office and an optional home address.</li>
+      <li>When you arrived at and left those places on workdays.</li>
+      <li>Your breaks, glasses of water and step counts.</li>
+      <li>Energy ratings, tasks, "park list" items and notes you type in the app.</li>
+      <li>Your settings, and any sound file you choose for reminders or sleep.</li>
+    </ul>
+    <p>Other apps cannot read this storage. The app turns off Android's cloud backup,
+    so this data is not copied to Google Drive or anywhere else.</p>
+  </section>
+
+  <section class="card">
+    <h2>Why the app asks for each permission</h2>
+    <ul>
+      <li><strong>Location, including "Allow all the time":</strong> to notice when you
+      arrive at and leave work, so reminders come only while you are there. The app
+      uses Android's geofencing (an alert when you enter or leave an area). It does not
+      track your route or keep a location history. Before bedtime it checks once whether
+      you are at home.</li>
+      <li><strong>Physical activity:</strong> to count your steps with the phone's step sensor.</li>
+      <li><strong>Calendar (read only):</strong> to see if a meeting is happening right
+      now, so a reminder can wait. Nothing from your calendar is saved.</li>
+      <li><strong>Notifications:</strong> to show your reminders.</li>
+      <li><strong>Alarms &amp; reminders:</strong> so reminders arrive on time.</li>
+      <li><strong>Run at startup:</strong> so your reminders come back after the phone restarts.</li>
+      <li><strong>Media playback:</strong> to keep playing a sleep melody with the screen off.</li>
+      <li><strong>Network state and keep awake:</strong> added automatically by Android's
+      background task tool (WorkManager), which the app uses for its hourly check.
+      The app does not use them to go online.</li>
+    </ul>
+    <p>You can say no to any permission. The app still works, with fewer features.</p>
+  </section>
+
+  <section class="card">
+    <h2>Google services on your phone</h2>
+    <p>Two features use services built into Android by Google, which run outside the app:</p>
+    <ul>
+      <li><strong>Location detection</strong> (geofencing and the "I'm here now" button)
+      uses Google Play services location.</li>
+      <li><strong>Address search</strong> uses Android's address lookup. The address you
+      type is looked up by that service, which may use the internet.</li>
+    </ul>
+    <p>These are handled by Google under
+    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+    The app itself sends nothing to Google or anyone else.</p>
+    <p>Guided breathing uses your phone's own text-to-speech voice. The app only passes it the words to speak.</p>
+  </section>
+
+  <section class="card">
+    <h2>You are in control</h2>
+    <ul>
+      <li><strong>Export my data (CSV):</strong> in Settings. You choose where the file is
+      saved. The app does not send it anywhere.</li>
+      <li><strong>Delete all data:</strong> in Settings. It removes everything the app has stored.</li>
+      <li><strong>Uninstall:</strong> removing the app also removes all its data.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Children</h2>
+    <p>The app is made for adults at work. It is not aimed at children under 13.</p>
+  </section>
+
+  <section class="card">
+    <h2>Health note</h2>
+    <p>Water, break and step suggestions are general habits, not medical advice.</p>
+  </section>
+
+  <section class="card">
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+    <p>Questions? Email <a class="contact" href="mailto:oldersaltedfish@gmail.com">oldersaltedfish@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
